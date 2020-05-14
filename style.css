@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/*GENERAL*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.b-red{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.b-cyan{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.b-orange{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.b-blue{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+/*MAIN*/
+
+.four-card{
+    padding: 80px 0 0;
+}
+
+/*HEADER*/
+
+.header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1{
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.header h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.header p{
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/*CARDS*/
+
+.card{
+    box-shadow: 10px 10px 48px -20px rgba(0,0,0,0.52);
+    border-radius: 7px;
+    padding: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.card:hover{
+    box-shadow: inset -5px 3px 76px -20px rgba(132, 132, 132, 0.15);
+}
+
+.card h4{
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p{
+    font-weight: 200;
+}
+
+article.card-text {
+    margin-bottom: 20px;
+}
+
+article.card-img {
+    text-align: right;
+}
+
+/*FOOTER*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding-top: 100px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1440px){
+
+    .header p{
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header h1, .header h2{
+        font-size: 35px;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-item {
+        max-width: 31.5%;
+    }
+
+}
